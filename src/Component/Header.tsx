@@ -8,30 +8,30 @@ function Header() {
         className="
         bg-gray-400
         h-[10vh]
-        w-[100vw]
         text-[#00264D]
         text-center
         p-2
-        text-[5vh]
+        w-[auto]
+        text-[4vh]
 "
       >
         Taiyo.AI
       </div>
-      <div className="flex flex-row ">
+      <div className="flex md:flex-row flex-col md:h-[90vh] ">
         <div
           className="
             bg-gray-200
             text-[#0052A2]
-            h-[90vh]
-            w-[21vw]
+            h-[50vh]
+            md:w-[21vw]
+            w-full
             gap-[0px]
-            opacity-[0px]
             text-center
 "
         >
           <div
             className="h-[10vh] b-1
-            w-[19vw] bg-gray-300 p-3 m-2 rounded-lg 
+            md:w-[19vw] w-[98] bg-gray-300 p-3 m-2 rounded-lg 
             hover:bg-gray-400 cursor-pointer transition duration-200"
             onClick={() => navigate("/")}
           >
@@ -39,7 +39,7 @@ function Header() {
           </div>
           <div
             className="h-[10vh]
-            w-[19vw] bg-gray-300 border-2 p-3 m-2 rounded-lg 
+            md:w-[19vw] w-[98vw] bg-gray-300 border-2 p-3 m-2 rounded-lg 
             hover:bg-gray-400 cursor-pointer transition duration-200"
             onClick={() => navigate("/contact")}
           >
@@ -47,17 +47,25 @@ function Header() {
           </div>
           <div
             className="h-[10vh]
-            w-[19vw] bg-gray-300 border-2 p-3 m-2 rounded-lg 
+            md:w-[19vw] w-[98vw] bg-gray-300 border-2 p-3 m-2 rounded-lg 
             hover:bg-gray-400 cursor-pointer transition duration-200"
-            onClick={() => navigate("/chart_map")}
+            onClick={() => navigate("/chart")}
           >
-            Charts and Maps
+            Charts
+          </div>
+          <div
+            className="h-[10vh]
+            md:w-[19vw] w-[98vw] bg-gray-300 border-2 p-3 m-2 rounded-lg 
+            hover:bg-gray-400 cursor-pointer transition duration-200"
+            onClick={() => navigate("/map")}
+          >
+            Maps
           </div>
           <div
             className=" absolute bottom-0 h-[10vh] text-center 
-            w-[19vw] bg-gray-300 border-2 border-gray-400 p-3 m-2 rounded-lg"
+            md:w-[19vw] max-md:opacity-0 bg-gray-300 border-2 border-gray-400 p-3 m-2 rounded-lg"
           >
-            Hiteshwarm Dubey
+            Hiteshwarm
           </div>
         </div>
       </div>

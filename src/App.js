@@ -4,6 +4,7 @@ import Dashboard from './Component/Dashboard'
 import Header from './Component/Header'
 import Contact from './Component/Contact'
 import Chart_Map from './Component/Chart&Map'
+import Map from './Component/Map'
 function App() {
   return (
     <>
@@ -12,7 +13,8 @@ function App() {
       <Routes>
         <Route exact path='/' Component={Dashboard}></Route>
         <Route exact path='/contact' Component={Contact}></Route>
-        <Route exact path='/chart_map' Component={Chart_Map}></Route>
+        <Route exact path='/chart' Component={Chart_Map}></Route>
+        <Route exact path='/map' Component={Map}></Route>
       </Routes>
     </Router>
     </>

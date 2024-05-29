@@ -32,8 +32,8 @@ function Contact() {
     <>
       {open == false ? (
         <div
-          className="flex-col flex-wrap justify-center items-center w-[79vw] h-[90vh] text-center absolute top-[10vh] left-[21vw]
-             bg-white-300 border-2 border-gray-400   text-[4vh] text-[#0052A2]"
+          className="md:flex md:flex-col md:flex-wrap md:justify-center md:w-[79vw] md:h-[90vh] md:text-center md:absolute md:top-[10vh] md:left-[21vw]  
+          bg-white-300 md:border-2 md:border-gray-400 md:p-[2vh]  md:text-[4vh] p-[6vh] w-[98vw] max-md:absolute max-md:top-[60vh] max-md:text-[5vh] text-center h-auto  text-[#0052A2]"
         >
           <a href="#formData">
             <button
@@ -41,7 +41,7 @@ function Contact() {
             hover:bg-gray-400 cursor-pointer transition duration-200"
               onClick={() => setopen(true)}
             >
-              Create Contact
+              Create
             </button>
           </a>
           {fetch_data.length > 0 ? (
@@ -66,16 +66,18 @@ function Contact() {
       ) : (
         <div
           id="formData"
-          className=" w-[79vw] h-[90vh] text-center absolute top-[10vh] left-[21vw]
-            bg-white-300 border-2 border-gray-400 text-[4vh] text-[#0052A2]"
+          
+          className=" md:w-[79vw] md:h-[90vh] md:text-center md:absolute md:top-[10vh] md:left-[21vw]
+          bg-white-300 md:border-2 md:border-gray-400 md:p-[40vh]  md:text-[4vh] p-[6vh] w-[98vw] absolute top-[60vh] text-[5vh] text-center h-auto  text-[#0052A2] flex flex-col items-center"
         >
-          Create Contact
-          <div className="absolute top-[15vh] left-[19vw] w-[40vw] h-[60vh] bg-gray-200 border-2 p-3 m-2 rounded-lg ">
+          <div>Create Contact</div>
+          
+          <div className="md:absolute md:top-[15vh] md:left-[19vw] md:w-[40vw] md:h-[60vh] absolute top-[15vh] w-[70vw] flex flex-col items-center bg-gray-200 md:border-2 md:p-3 md:m-2 rounded-lg ">
             <form>
               <label>First Name</label>
               <input
                 required
-                className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-black"
+                className="mt-1 block w-full border border-gray-300 rounded-md p-2"
                 type="text"
                 value={first_name}
                 name="first_name"
